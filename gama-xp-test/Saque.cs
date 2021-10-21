@@ -15,9 +15,9 @@ namespace gama_xp_test
             realizarSaque(value);
         }
 
-        public void salvar()
+        public Saque salvar()
         {
-            Console.WriteLine($"Transacao feita em: {transactionTime} de valor {_value} salva com sucesso!");
+            return this;
         }
 
         public void realizarSaque(double _withdrawValue)

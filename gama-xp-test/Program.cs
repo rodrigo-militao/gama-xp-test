@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace gama_xp_test
 {
@@ -6,8 +7,13 @@ namespace gama_xp_test
     {
         static void Main(string[] args)
         {
+            List<Saque> saques = new List<Saque>();
             var saque = new Saque(250);
-            saque.salvar();
+            var salvo = saque.salvar();
+
+            saques.Add(salvo);
+
+            Console.WriteLine(saques);
         }
     }
 }
